@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.todolist {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -35,10 +35,12 @@ body {
 .flex {
   display: flex;
 }
-ul {
+
+.list {
   margin: 0;
   padding: 0px;
 }
+
 li,
 h3 {
   list-style: none;
@@ -47,7 +49,8 @@ input,
 button {
   outline: none;
 }
-button {
+
+.btn {
   background: none;
   border: 0px;
   color: #888;
@@ -56,7 +59,7 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-button:hover {
+.btn:hover {
   color: #3a3a3a;
 }
 /* Heading */
@@ -121,31 +124,31 @@ li > label {
 li > input[type="text"] {
   width: 226px;
 }
-button.delete-btn img {
+.delete-btn img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button.delete-btn img:hover {
+.delete-btn img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-ul#completed-tasks label {
+#completed-tasks label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-ul li input[type="text"] {
+li input[type="text"] {
   display: none;
 }
 
-ul li.editMode input[type="text"] {
+li.editMode input[type="text"] {
   display: inline-block;
   width: 224px;
 }
 
-ul li.editMode label {
+li.editMode label {
   display: none;
 }
