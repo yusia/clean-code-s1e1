@@ -9,39 +9,39 @@
 
 <body class="todolist">
     <div class="header">
-        <img src="./eisenhower-matrix.jpg">
+        <img class="logo" src="./eisenhower-matrix.jpg">
         <a class="more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </div>
     <div class="wrapper">
         <p id="add-tasks-wrapper">
-            <label for="new-task">Add Item</label>
-        <div class="flex">
-            <input id="new-task" class="description" type="text">
-            <button class="btn">Add</button>
-        </div>
+            <label for="new-task" class="section-header">Add Item</label>
+            <div class="flex">
+                <input id="new-task" class="description-field" type="text">
+                <button class="btn">Add</button>
+            </div>
         </p>
-        <h3>Todo</h3>
+        <h3 class="section-header">Todo</h3>
         <ul id="incomplete-tasks" class="list">
-            <li>
-                <input type="checkbox"> <label class="description">Pay Bills</label>
-                <input type="text" class="description">
+            <li class="task-item">
+                <input type="checkbox" class="status"> <label class="description">Pay Bills</label>
+                <input type="text" class="description-field">
                 <button class="btn edit-btn">Edit</button>
-                <button class="btn delete-btn"><img src="./remove.svg"></button>
+                <button class="btn delete-btn"><img class="icon" src="./remove.svg"></button>
             </li>
-            <li class="editMode">
-                <input type="checkbox"><label class="description">Go Shopping</label>
-                <input type="text" value="Go Shopping" class="description">
+            <li class="task-item editMode">
+                <input type="checkbox" class="status"><label class="description">Go Shopping</label>
+                <input type="text" value="Go Shopping" class="description-field">
                 <button class="btn edit-btn">Save</button>
-                <button class="btn delete-btn"><img src="./remove.svg"></button>
+                <button class="btn delete-btn"><img class="icon" src="./remove.svg"></button>
             </li>
         </ul>
-        <h3>Completed</h3>
+        <h3 class="section-header" >Completed</h3>
         <ul id="completed-tasks" class="list">
-            <li>
-                <input type="checkbox" checked><label class="description">See the Doctor</label>
-                <input type="text" class="description">
+            <li class="task-item">
+                <input type="checkbox" class="status" checked><label class="description">See the Doctor</label>
+                <input type="text" class="description-field">
                 <button class="btn edit-btn">Edit</button>
-                <button class="btn delete-btn"><img src="./remove.svg"></button>
+                <button class="btn delete-btn"><img  class="icon" src="./remove.svg"></button>
             </li>
         </ul>
     </div>

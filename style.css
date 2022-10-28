@@ -10,7 +10,7 @@
   display: block;
   text-align: right;
 }
-.header img {
+.header .logo {
   width: 100%;
 }
 .header .more-inf {
@@ -27,7 +27,8 @@
   width: 500px;
   margin: 0 auto 0;
 }
-.description {
+.description,
+.description-field {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -63,8 +64,7 @@ button {
   color: #3a3a3a;
 }
 /* Heading */
-h3,
-label[for="new-task"] {
+.section-header {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -73,7 +73,7 @@ label[for="new-task"] {
   margin: 0;
   text-transform: uppercase;
 }
-input[type="text"] {
+.description-field {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -85,21 +85,21 @@ input[type="text"] {
   font-family: Lato, sans-serif;
   color: #888;
 }
-input[type="text"]:focus {
+.description-field:focus {
   color: #333;
 }
 
 /* New Task */
-label[for="new-task"] {
+#add-tasks-wrapper .section-header {
   display: block;
   margin: 0 0 20px;
 }
-input#new-task {
+#new-task {
   width: 318px;
 }
 
 /* Task list */
-li {
+.task-item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -108,47 +108,44 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-li > * {
+.task-item> * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.status {
   margin: 0 10px;
 }
-li > label {
+.task-item .description {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-li > input[type="text"] {
+.task-item  .description-field{
   width: 226px;
 }
-.delete-btn img {
+.delete-btn .icon {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.delete-btn img:hover {
+.delete-btn .icon:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-#completed-tasks label {
+#completed-tasks .description {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-li input[type="text"] {
+.task-item .description-field,
+.editMode .description {
   display: none;
 }
 
-li.editMode input[type="text"] {
+.editMode .description-field{
   display: inline-block;
   width: 224px;
-}
-
-li.editMode label {
-  display: none;
 }
