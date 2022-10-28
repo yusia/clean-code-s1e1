@@ -8,18 +8,18 @@
 </head>
 
 <body class="todolist">
-    <div class="header">
+    <header class="header">
         <img class="logo" src="./eisenhower-matrix.jpg">
         <a class="more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-    </div>
-    <div class="wrapper">
-        <p id="add-tasks-wrapper">
-            <label for="new-task" class="section-header">Add Item</label>
+    </header>
+    <article class="wrapper">
+        <section class="add-tasks-section">
+            <h3 class="section-header">Add Item</h3>
             <div class="flex">
                 <input id="new-task" class="description-field" type="text">
                 <button class="btn">Add</button>
             </div>
-        </p>
+        </section>
         <h3 class="section-header">Todo</h3>
         <ul id="incomplete-tasks" class="list">
             <li class="task-item">
@@ -35,16 +35,16 @@
                 <button class="btn delete-btn"><img class="icon" src="./remove.svg"></button>
             </li>
         </ul>
-        <h3 class="section-header" >Completed</h3>
+        <h3 class="section-header">Completed</h3>
         <ul id="completed-tasks" class="list">
             <li class="task-item">
                 <input type="checkbox" class="status" checked><label class="description">See the Doctor</label>
                 <input type="text" class="description-field">
                 <button class="btn edit-btn">Edit</button>
-                <button class="btn delete-btn"><img  class="icon" src="./remove.svg"></button>
+                <button class="btn delete-btn"><img class="icon" src="./remove.svg"></button>
             </li>
         </ul>
-    </div>
+    </article>
     <script src="app.js"></script>
 </body>
 
