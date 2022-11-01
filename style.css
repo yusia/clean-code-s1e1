@@ -149,11 +149,11 @@ button {
 
 /* Edit Task */
 .task-item__description-field,
-.task-item_editMode .task-item__description {
+.task-item_edited .task-item__description {
   display: none;
 }
 
-.task-item_editMode .task-item__description-field{
+.task-item_edited .task-item__description-field{
   display: inline-block;
   width: 224px;
 }
